@@ -15,3 +15,31 @@ Tech Stack:
 - docker : 20.10.12
 - kubernetes : 1.29.2 (AKS)
 - APIM : Self Hosted Gateway (gateway hosted in AKS)
+
+
+### Getting Started
+
+The repository contains all the data needed to setup AKS, ACR, APIM and self-hosted-gateway in Azure.
+Also it contains the relevant code to create container-image and to deploy the same onto AKS.
+The container-image is pushed onto ACR registry.
+
+
+### Directory Structure
+
+```
+client
+    |
+    |-- client.py (client to read data from grpc api)
+grpc_api
+    |
+    |-- grpc api to be pushed onto ACR and deploy to AKS.
+self-hosted-gateway
+    |
+    |-- code related to build self-hosted-gateway image and deploy that to AKS.
+infra
+    |
+    |-- AKS (infra code for AKS)
+    |-- APIM (infra code for APIM)
+
+
+```
