@@ -1,4 +1,4 @@
-# azure-data-transfer
+# grpc-data-transfer
 
 Trying out azure apim self hosted gateway.
 This POC would use arrow flight as a grpc protocol and expose that api via azure apim with self hosted gateway.
